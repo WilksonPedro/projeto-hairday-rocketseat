@@ -4,13 +4,15 @@
   "author": "Wilkson Silva",
   "scripts": {
     "server": "json-server --watch server.json --port 3000",
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack server"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.21"
   },
   "devDependencies": {
     "webpack": "^5.99.5",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }

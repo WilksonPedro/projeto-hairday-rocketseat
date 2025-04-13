@@ -10,4 +10,16 @@ module.exports = {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),
     },
+
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "dist"),
+        },
+        port: 3000,
+        // A porta onde o servidor vai rodar
+        open: true,
+        // Define se o servidor vai abrir o navegador automaticamente
+        liveReload: true,
+        // Define se o servidor vai atualizar a página automaticamente
+    }
 }
