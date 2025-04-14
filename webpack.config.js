@@ -32,4 +32,14 @@ module.exports = {
             // para importar o favicon
         }),
     ],
+
+    module: {
+        rules: [{
+            test: /\.css$/,
+            // Testa se o arquivo é css
+            use: ["style-loader", "css-loader"],
+            // O css-loader é usado para importar o css
+            // O style-loader é usado para adicionar o css ao html
+        },],
+    },
 }
